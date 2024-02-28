@@ -1,0 +1,39 @@
+$themes: (
+  //默认主题
+  default: (
+    color-primary: #1EA7FF,//主题色
+    font-size: 14px, //字体大小
+    icon-size: 16px, //图标大小
+    font-color: #333333, //字体颜色
+    border-color: #DADBE1, //边框颜色
+    background-color: #F0F2F6, //背景色
+    nav-bg: #FFFFFF, //导航背景色·
+    nav-color: #000000, //导航字体颜色
+    contrast-bg: #F5F8FF,//背景反差色
+    content-bg: #FFFFFF, //内容背景色
+    link-color: #1EA7FF, //链接颜色
+    divider-border: rgba(127, 139, 161, .2), //分割线颜色
+  ),
+  //暗色主题
+  dark: (
+    color-primary: #1EA7FF,//主题色
+    font-size: 14px, //字体大小
+    icon-size: 16px, //图标大小
+    font-color: #FFFFFF, //字体颜色
+    border-color: #05336A, //边框颜色
+    background-color: #001A46, //背景色
+    nav-bg: #032256, //导航背景色
+    nav-color: #FFFFFF, //导航字体颜色
+    contrast-bg: #05336A,//背景反差色
+    content-bg: #032256, //内容背景色
+    link-color: #1EA7FF, //链接颜色
+    divider-border: #7F8BA1, //分割线颜色
+  ),
+  //亮色主题
+  light: (
+    font-color: red, //字体颜色
+    border-color: rgb(243, 73, 73), //边框颜色
+    background-color:rgb(240, 2, 2), //背景色
+  ),
+);
+

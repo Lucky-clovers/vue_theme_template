@@ -1,0 +1,100 @@
+{
+  "id": "3534597",
+  "name": "任务调度系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30723936",
+      "name": "icon_delete",
+      "font_class": "icon_delete",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "30723937",
+      "name": "ic_title_xinxi",
+      "font_class": "ic_title_xinxi",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "30723938",
+      "name": "ic_more",
+      "font_class": "ic_more",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "30723939",
+      "name": "icon_set",
+      "font_class": "icon_set",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "30723940",
+      "name": "icon_chengxu",
+      "font_class": "icon_chengxu",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "30723941",
+      "name": "icon_bell",
+      "font_class": "icon_bell",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "30723942",
+      "name": "icon_sbkzzl",
+      "font_class": "icon_sbkzzl",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "30723943",
+      "name": "ic_title_suanfa",
+      "font_class": "ic_title_suanfa",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "30723944",
+      "name": "icon_leibie",
+      "font_class": "icon_leibie",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "30723945",
+      "name": "icon_fenlei",
+      "font_class": "icon_fenlei",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "30723946",
+      "name": "ic_title_rongqi",
+      "font_class": "ic_title_rongqi",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "30723947",
+      "name": "icon_peizhi",
+      "font_class": "icon_peizhi",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "30723948",
+      "name": "icon_renwu",
+      "font_class": "icon_renwu",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+//汇集项目公用样式
+@import "variable.scss";
+
+.el-select {
+  width: 100%;
+}
+
+.el-menu {
+  border-right: 0;
+}
+
+.el-dialog {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.el-dialog__wrapper {
+  overflow-x: hidden;
+}
+
+.dialog-fade-enter-active .el-dialog.transpose {
+  animation: dialog-fade-in .3s ease;
+}
+
+.dialog-fade-leave-active .el-dialog.transpose {
+  animation: dialog-fade-out .3s ease;
+}
+
+@keyframes dialog-fade-in {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes dialog-fade-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+}
+
+//侧边栏
+.table-container {
+  .el-table {
+    background: transparent;
+
+    tr {
+      background-color: transparent;
+    }
+
+    &:before {
+      z-index: -1;
+    }
+  }
+
+  .el-table__header-wrapper th {
+    height: 54px;
+    border: none !important;
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover>td.el-table__cell {
+    background-color: transparent;
+  }
+}
+
+//分页按钮
+.pagination-container .el-pagination {
+
+  .el-input__inner {
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+
+  .btn-prev,
+  .btn-next {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid;
+    margin-right: 8px;
+    line-height: 32px;
+  }
+
+  .el-pager {
+    .number {
+      margin-right: 8px;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      border: 1px solid;
+      line-height: 32px;
+    }
+
+    .more {
+      margin-right: 8px;
+      background: transparent;
+    }
+  }
+
+  .el-pagination__jump .el-input__inner {
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+}
+
+
+//侧边栏
+.ht-menu--container .ht-menu-item {
+  .el-menu-item {
+    position: relative;
+
+    &.is-active {
+      &:after {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 100%;
+        border-radius: 5px;
+        right: 0;
+      }
+    }
+  }
+}
+
+//头部搜索位置
+.container [class$="-header"] .el-button,
+.float-right .el-button,
+.container .route-edit-header .el-button {
+  border-radius: 4px;
+  border: 1px solid;
+  height: 35px;
+  line-height: 35px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+//提示框
+.el-message-box {
+  border: none;
+
+  .el-message-box__btns .el-button:nth-child(1) {
+    border-radius: 4px;
+  }
+}
+
+
+//分页样式
+.pagination-container {
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+
+}
+
+//侧边栏滚动条样式
+.ht-menu--container .ht-menu {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+  }
+}

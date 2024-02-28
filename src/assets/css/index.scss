@@ -1,0 +1,134 @@
+@import "../../themes/handle";
+@import "../../themes/var";
+/* 字体 */
+@font-face {
+  font-family: "SourceHanSansCN";
+  src: url('../fonts/SourceHanSansCN-Regular.otf');
+}
+
+.demo-layout {
+  .el-row {
+    margin-bottom: 20px;
+  }
+  .el-tag{
+    margin-left: 10px;
+  }
+}
+
+body {
+  @include font_size('font-size')
+}
+
+//导航头
+.header-bar {
+  @include background_color('nav-bg');
+  @include font_color('nav-color');
+  font-family: SourceHanSansCN;
+  border-bottom: 1px solid;
+  @include border_color('border-color');
+}
+
+
+//面包屑
+.ht-breadcrumb {
+  @include background_color('contrast-bg');
+
+  .el-breadcrumb__item {
+
+    .is-link {
+      @include font_color('link-color');
+
+      &.is-link:hover {
+        @include font_color('font-color');
+      }
+    }
+
+    &:last-child .is-link {
+      @include font_color('font-color');
+    }
+  }
+}
+
+//视图区域
+.pooled-content {
+  @include background_color('background-color');
+
+  .container {
+    & > div {
+      @include background_color('content-bg');
+      @include font_color('font-color');
+    }
+  }
+}
+
+//element 分割线
+.el-divider {
+  @include border_color('divider-border');
+}
+
+//table 样式
+.table-container {
+  .el-table {
+    @include font_color('font-color');
+  }
+
+  .el-table__header-wrapper th {
+    @include background_color('contrast-bg');
+    @include font_color('font-color');
+  }
+
+  .el-table td.el-table__cell,
+  .el-table th.el-table__cell.is-leaf {
+    @include border_color('divider-border');
+  }
+}
+
+
+//侧边栏颜色
+.ht-menu--container {
+  .shrink {
+    @include background_color('contrast-bg');
+    @include font_color('color-primary');
+  }
+
+  .el-submenu__icon-arrow.el-icon-arrow-down {
+    @include font_size('icon-size')
+  }
+
+  .ht-menu-item, .ht-menu {
+    @include background_color('content-bg');
+
+    .el-submenu__title {
+      @include font_color('font-color');
+
+      &:hover {
+        @include background_color('contrast-bg');
+      }
+
+      i {
+        @include font_color('font-color');
+      }
+    }
+
+    .el-menu-item {
+      @include font_color('font-color');
+
+      &.is-active {
+        @include background_color('contrast-bg');
+        @include font_color('color-primary');
+
+        &:after {
+          @include background_color('color-primary');
+        }
+      }
+    }
+
+    .el-menu-item:focus, .el-menu-item:hover {
+      @include background_color('contrast-bg')
+    }
+  }
+}
+
+[class$="_label"] {
+  @include font_color('font-color');
+}
